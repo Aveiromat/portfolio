@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import Contact from '../../components/Contact'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
 
@@ -8,20 +9,23 @@ type Props = {
   trocaTema: () => void
 }
 
-const Sidebar = (props: Props) => (
-  <aside>
-    <SidebarContainer>
-      <Avatar />
-      <Titulo fontSize={20}>Matheus Aveiro</Titulo>
-      <Paragrafo tipo="secundario" fontSize={16}>
-        aveiromat
-      </Paragrafo>
-      <Descricao tipo="principal" fontSize={12}>
-        Engenheiro front-end
-      </Descricao>
-      <BotaoTema onClick={props.trocaTema}>Trocar tema</BotaoTema>
-    </SidebarContainer>
-  </aside>
-)
+const Sidebar = ({ trocaTema }: Props) => {
+  return (
+    <aside>
+      <SidebarContainer>
+        <Avatar />
+        <Titulo fontSize={20}>Matheus Aveiro</Titulo>
+        <Paragrafo tipo="secundario" fontSize={16}>
+          aveiromat
+        </Paragrafo>
+        <Descricao tipo="principal" fontSize={12}>
+          Engenheiro Full Stack
+        </Descricao>
+        <Contact />
+        <BotaoTema onClick={trocaTema}>Trocar tema</BotaoTema>
+      </SidebarContainer>
+    </aside>
+  )
+}
 
 export default Sidebar

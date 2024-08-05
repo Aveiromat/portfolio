@@ -7,42 +7,16 @@ const Projetos = () => (
   <section>
     <Titulo fontSize={16}>Projetos</Titulo>
     <Lista>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
-      <li>
-        <Projeto />
-      </li>
+      <Projeto
+        names={[
+          'TwitterX-Fullstack',
+          'Efood',
+          'duck-contacts',
+          'WavesReact',
+          'COC-Projeto-Aveiro',
+          'linktree-aveiro'
+        ]}
+      />
     </Lista>
   </section>
 )
