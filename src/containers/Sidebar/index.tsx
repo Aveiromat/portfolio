@@ -18,7 +18,7 @@ const Sidebar = ({ trocaTema }: Props) => {
           aveiromat
         </Paragrafo>
         <Descricao tipo="principal" fontSize={12}>
-          Engenheiro front-end
+          Engenheiro Full Stack
         </Descricao>
         <BotaoTema onClick={trocaTema}>Trocar tema</BotaoTema>
       </SidebarContainer>

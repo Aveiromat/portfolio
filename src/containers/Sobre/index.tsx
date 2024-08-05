@@ -14,10 +14,13 @@ const Sobre = ({ tema }: Props) => {
     <section>
       <Titulo fontSize={16}>Sobre mim</Titulo>
       <Paragrafo tipo="principal">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta
-        quidem eum deleniti et qui. Sit ab tempora eligendi vero eaque
-        accusantium corrupti enim delectus voluptatem error odio, soluta
-        distinctio.
+        Desde pequeno, sabia que queria trabalhar com tecnologia. Adorava passar
+        horas com minha família me divertindo no computador. Hoje, tenho um
+        profundo interesse nessa área porque acredito que a tecnologia conecta
+        as pessoas e facilita nossas vidas, permitindo que gastemos menos tempo
+        com tarefas repetitivas e mais tempo com quem amamos. Trabalho criando
+        softwares como soluções para melhorar a vida das pessoas, proporcionando
+        mais tempo para o que realmente importa.
       </Paragrafo>
       <GithubSecao>
         <img

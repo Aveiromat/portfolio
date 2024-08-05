@@ -3,6 +3,12 @@ import styled from 'styled-components'
 export const Card = styled.div`
   border: 1px solid ${(props) => props.theme.corDaBorda};
   padding: 16px;
+  display: grid;
+`
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `
 
 export const LinkBotao = styled.a`
@@ -16,6 +22,7 @@ export const LinkBotao = styled.a`
   border: 1px solid ${(props) => props.theme.corDaBordaBotao};
   cursor: pointer;
   text-align: center;
+  align-self: end;
 
   &:hover {
     background-color: ${(props) => props.theme.corDeFundoBotaoHover};

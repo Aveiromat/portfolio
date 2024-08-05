@@ -5,6 +5,7 @@ export const Descricao = styled(P)`
   margin-top: 24px;
   margin-bottom: 40px;
 `
+
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
@@ -19,6 +20,12 @@ export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+  width: auto; /* Permite expansão horizontal */
+  max-width: 100%; /* Garante que não exceda a largura disponível */
+  box-sizing: border-box;
+  overflow: hidden; /* Evita que o conteúdo transborde e cause rolagem desnecessária */
+  display: flex;
+  flex-direction: column; /* Garante que o conteúdo seja exibido em coluna */
 
   @media (max-width: 768px) {
     margin-bottom: 40px;

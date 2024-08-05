@@ -9,4 +9,5 @@ export const P = styled.p<Props>`
       ? props.theme.corPrincipal
       : props.theme.corSecundaria};
   line-height: 22px;
+  text-align: justify;
 `
