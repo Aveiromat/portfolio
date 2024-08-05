@@ -1,4 +1,4 @@
-const temaDark = {
+const temadracula = {
   corPrincipal: '#fff',
   corSecundaria: '#eee',
   corDeFundo: '#282a35',
@@ -6,7 +6,7 @@ const temaDark = {
   corDaBorda: '#c1c1c1'
 }
 
-export default temaDark
+export default temadracula
 
 export type Theme = {
   corPrincipal: string

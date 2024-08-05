@@ -10,7 +10,14 @@ export const LinkBotao = styled.a`
   font-size: 14px;
   background-color: ${(props) => props.theme.corDeFundoBotao};
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 16px;
   display: inline-block;
   margin-top: 24px;
+  border: 1px solid ${(props) => props.theme.corDaBordaBotao};
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: ${(props) => props.theme.corDeFundoBotaoHover};
+  }
 `

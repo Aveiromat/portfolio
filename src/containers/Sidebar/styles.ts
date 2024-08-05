@@ -9,9 +9,9 @@ export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
   color: ${(props) => props.theme.corDeFundo};
-  ont-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  background-color: ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corDeFundoBotao};
   cursor: pointer;
 `
 

@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-import { Theme } from './themes/dark'
+import { Theme } from './themes/dracula'
 
 const EstiloGlobal = createGlobalStyle`
  * {
