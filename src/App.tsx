@@ -6,22 +6,24 @@ import Sidebar from './containers/Sidebar'
 import Sobre from './containers/Sobre'
 import EstiloGlobal, { Container } from './styles'
 import temaLight from './themes/light'
-import temaDark from './themes/dark'
+import temadracula from './themes/dracula'
 
 function App() {
-  const [estaUsandoTemaDark, setEstaUsandoTemaDark] = useState(true)
+  const [estaUsandoTemadracula, setEstaUsandoTemadracula] = useState(true)
 
   function trocaTema() {
-    setEstaUsandoTemaDark(!estaUsandoTemaDark)
+    setEstaUsandoTemadracula((prevTema) => !prevTema)
   }
 
+  const temaAtual = estaUsandoTemadracula ? 'dracula' : 'light'
+
   return (
-    <ThemeProvider theme={estaUsandoTemaDark ? temaDark : temaLight}>
+    <ThemeProvider theme={estaUsandoTemadracula ? temadracula : temaLight}>
       <EstiloGlobal />
       <Container>
-        <Sidebar trocaTema={trocaTema} />
+        <Sidebar trocaTema={trocaTema} tema={temaAtual} />
         <main>
-          <Sobre />
+          <Sobre tema={temaAtual} />
           <Projetos />
         </main>
       </Container>
