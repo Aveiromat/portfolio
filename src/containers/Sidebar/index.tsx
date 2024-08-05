@@ -2,10 +2,10 @@ import Avatar from '../../components/Avatar'
 import Contact from '../../components/Contact'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
-
 import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
 type Props = {
+  tema: 'light' | 'dracula'
   trocaTema: () => void
 }
 
