@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { P } from '../../components/Paragrafo/styles'
 
 export const Descricao = styled(P)`
-  margin-top: 24px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 `
 
 export const BotaoTema = styled.button`

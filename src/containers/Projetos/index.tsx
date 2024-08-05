@@ -7,7 +7,14 @@ const Projetos = () => (
     <Titulo fontSize={16}>Projetos relevantes</Titulo>
     <Lista>
       <Projeto
-        names={['TwitterX-Fullstack', 'Efood', 'duck-contacts', 'WavesReact']}
+        names={[
+          'TwitterX-Fullstack',
+          'Efood',
+          'duck-contacts',
+          'WavesReact',
+          'COC-Projeto-Aveiro',
+          'linktree-aveiro'
+        ]}
       />
     </Lista>
   </section>

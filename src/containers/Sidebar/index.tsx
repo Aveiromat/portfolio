@@ -1,4 +1,5 @@
 import Avatar from '../../components/Avatar'
+import Contact from '../../components/Contact'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
 import { Descricao, BotaoTema, SidebarContainer } from './styles'
@@ -20,6 +21,7 @@ const Sidebar = ({ trocaTema }: Props) => {
         <Descricao tipo="principal" fontSize={12}>
           Engenheiro Full Stack
         </Descricao>
+        <Contact />
         <BotaoTema onClick={trocaTema}>Trocar tema</BotaoTema>
       </SidebarContainer>
     </aside>
