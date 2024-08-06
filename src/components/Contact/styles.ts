@@ -7,6 +7,11 @@ export const Social = styled.ul`
   width: 100%;
   margin: 0 auto;
 
+  @media (max-width: 768px) {
+    padding: 0px 8px;
+    margin-top: 8px;
+  }
+
   @media @breakpointMin {
     text-align: center;
     display: grid;
