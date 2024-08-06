@@ -32,7 +32,13 @@ const Projeto = ({ names }: ProjetoProps) => {
         const filteredRepos = allRepos.filter((repo) =>
           names.includes(repo.name)
         )
-        setRepos(filteredRepos)
+
+        // Ordenar os repositórios de acordo com a ordem dos nomes fornecidos
+        const orderedRepos = names
+          .map((name) => filteredRepos.find((repo) => repo.name === name))
+          .filter((repo) => repo !== undefined) as Repo[]
+
+        setRepos(orderedRepos)
       } catch (error) {
         console.error(error)
         setError('Erro ao buscar repositórios')
