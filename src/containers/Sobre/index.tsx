@@ -24,7 +24,7 @@ const Sobre = ({ tema }: Props) => {
       </Paragrafo>
       <GithubSecao>
         <img
-          src={`https://github-readme-stats.vercel.app/api?username=aveiromat&show_icons=true&theme=${theme}&include_all_commits=true&count_private=true`}
+          src={`https://github-readme-stats.vercel.app/api?username=aveiromat&show_icons=true&theme=${theme}`}
           alt="Estatísticas do GitHub"
         />
         <img
