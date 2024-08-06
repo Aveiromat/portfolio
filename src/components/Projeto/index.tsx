@@ -9,6 +9,7 @@ interface Repo {
   name: string
   description: string
   html_url: string
+  homepage: string
 }
 
 interface ProjetoProps {
@@ -67,7 +68,14 @@ const Projeto = ({ names }: ProjetoProps) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visualizar
+              Repositório
+            </LinkBotao>
+            <LinkBotao
+              href={repo.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Deploy
             </LinkBotao>
           </Grid>
         </Card>
